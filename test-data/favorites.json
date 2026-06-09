@@ -1,0 +1,46 @@
+{
+  "validMovieFavorite": {
+    "media_type": "movie",
+    "media_id": 347,
+    "favorite": true
+  },
+
+  "validMovieFavoriteRemove": {
+    "media_type": "movie",
+    "media_id": 347,
+    "favorite": false
+  },
+
+  "noResourceMovieFavorite": {
+    "media_type": "movie",
+    "media_id": 111111,
+    "favorite": true
+  },
+
+  "validTVFavorite": {
+    "media_type": "tv",
+    "media_id": 348,
+    "favorite": true
+  },
+
+  "validTVFavoriteRemove": {
+    "media_type": "tv",
+    "media_id": 348,
+    "favorite": false
+  },
+
+  "invalidMissingMediaId": {
+    "media_type": "movie",
+    "favorite": true
+  },
+
+  "invalidMissingMediaType": {
+    "media_id": 12345,
+    "favorite": true
+  },
+
+  "invalidMissingFavorite": {
+    "media_type": "movie",
+    "media_id": 12345
+  }
+}
