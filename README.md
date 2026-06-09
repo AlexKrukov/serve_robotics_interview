@@ -18,6 +18,12 @@ File:
 ```
 tests/api-tests/account.spec.ts
 ```
+
+### Used API endpoints:
+
+- GET -> https://api.themoviedb.org/3/account/{account_id}
+- POST -> https://api.themoviedb.org/3/account/{account_id}/favorite
+
 ### Covered scenarios:
 
 ✔ Add movie to favorites (success)  
