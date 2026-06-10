@@ -18,6 +18,12 @@ File:
 ```
 tests/api-tests/account.spec.ts
 ```
+
+### Used API endpoints:
+
+- GET -> https://api.themoviedb.org/3/account/{account_id}
+- POST -> https://api.themoviedb.org/3/account/{account_id}/favorite
+
 ### Covered scenarios:
 
 ✔ Add movie to favorites (success)  
@@ -50,6 +56,12 @@ tests/ui-tests/swag-labs.spec.ts
 ✔ Verify cart item count (cart page)  
 ✔ Remove item from cart  
 ✔ Validate cart updates dynamically  
+
+---
+
+# Test Results
+
+<img width="987" height="248" alt="Screenshot 2026-06-09 at 3 25 50 PM" src="https://github.com/user-attachments/assets/4f9fedc5-dedf-4490-9fe2-bce8bfddc7a1" />
 
 ---
 
@@ -128,8 +140,3 @@ Tokens are stored in:
 ```
 test-data/Tokens.ts
 ```
-
----
-
-# Test Results
-
