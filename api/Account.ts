@@ -45,4 +45,22 @@ export class Account {
     );
     return response;
   }
+
+  /**
+   * GET /movie/movieId
+   * Get the top level details of a movie by ID
+   */
+  async getMovieById(movieId: number | string): Promise<APIResponse> {
+    const response = await this.request.get(
+      Endpoints.Account.movies(movieId),
+      {
+        headers: {
+          Authorization: `Bearer ${Tokens.validToken}`,
+          Accept: 'application/json',
+        },
+      }
+    );
+    expect(response.ok()).toBeTruthy();
+    return response;
+  }
 }

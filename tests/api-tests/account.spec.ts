@@ -189,4 +189,14 @@ test.describe('Account - Favorites API', () => {
       ExpectedMessages.errors.invalidApiKey
     );
   });
+
+  // -----------------------------------
+  // 13. Get movie by ID - positive case
+  // -----------------------------------
+  test('Get movie byID - Success', async () => {
+    const response = await account.getMovieById(155);
+    const body = await response.json();
+    expect(response.status()).toBe(200);
+    expect(body.original_title).toBe('The Dark Knight');
+  });
 });
